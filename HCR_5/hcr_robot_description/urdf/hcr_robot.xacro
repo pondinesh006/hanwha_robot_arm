@@ -1,0 +1,202 @@
+<?xml version="1.0" ?>
+<robot name="hcr_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find hcr_robot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find hcr_robot_description)/urdf/hcr_robot.trans" />
+<xacro:include filename="$(find hcr_robot_description)/urdf/hcr_robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.044693591972953806 -9.689819846991377e-05 0.013982771179495564" rpy="0 0 0"/>
+    <mass value="4.071462983655495"/>
+    <inertia ixx="0.004614" iyy="0.063084" izz="0.067151" ixy="-2e-05" iyz="0.0" ixz="-0.000189"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="-0.009232924655966162 5.611908895686318e-08 0.08981078121700108" rpy="0 0 0"/>
+    <mass value="17.125748524580114"/>
+    <inertia ixx="0.054601" iyy="0.061186" izz="0.036738" ixy="0.0" iyz="-0.0" ixz="0.004569"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="-0.08134423156498356 0.0004999972193747809 0.21200027982915884" rpy="0 0 0"/>
+    <mass value="32.073698785630135"/>
+    <inertia ixx="1.334728" iyy="1.368804" izz="0.0845" ixy="-5e-06" iyz="-0.003172" ixz="-0.002068"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0785 0.0 -0.148778" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0785 0.0 -0.148778" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="0.03733088153046067 -8.45436915776097e-06 0.32700293666580915" rpy="0 0 0"/>
+    <mass value="6.636542484506931"/>
+    <inertia ixx="0.008668" iyy="0.014027" izz="0.010649" ixy="-0.0" iyz="0.0" ixz="0.001661"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.077848 -0.001 -0.572778" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.077848 -0.001 -0.572778" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="-0.053462210233883714 -3.2261679182082545e-07 0.022076827880824546" rpy="0 0 0"/>
+    <mass value="6.518501202798632"/>
+    <inertia ixx="0.011005" iyy="0.012783" izz="0.007491" ixy="-0.0" iyz="0.0" ixz="0.001222"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.107864 -0.000992 -0.911345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.107864 -0.000992 -0.911345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="-0.022082116809040042 -5.860596366637823e-07 0.0534553107989999" rpy="0 0 0"/>
+    <mass value="6.518501237017786"/>
+    <inertia ixx="0.007541" iyy="0.012794" izz="0.010966" ixy="0.0" iyz="-0.0" ixz="0.001224"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.169864 -0.000992 -1.000941" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.169864 -0.000992 -1.000941" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="-0.019264152679962065 -4.5474100852818493e-07 -0.0005907014657897669" rpy="0 0 0"/>
+    <mass value="1.6914762668461325"/>
+    <inertia ixx="0.001473" iyy="0.00094" izz="0.000976" ixy="0.0" iyz="0.0" ixz="-8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.25946 -0.000992 -1.062941" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.25946 -0.000992 -1.062941" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://hcr_robot_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint_1" type="revolute">
+  <origin xyz="0.0 0.0 0.03" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_2" type="revolute">
+  <origin xyz="-0.0785 0.0 0.118778" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_3" type="revolute">
+  <origin xyz="0.000652 0.001 0.424" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="2.268928" lower="-2.268928" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_4" type="revolute">
+  <origin xyz="-0.030016 -8e-06 0.338567" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="2.96706" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_5" type="revolute">
+  <origin xyz="-0.062 0.0 0.089596" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="2.094395" lower="-2.094395" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_6" type="revolute">
+  <origin xyz="-0.089596 0.0 0.062" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+  <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
