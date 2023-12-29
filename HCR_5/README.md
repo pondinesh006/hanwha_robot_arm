@@ -30,7 +30,7 @@ These instructions build the `noetic-devel` branch on a ROS Noetic system:
 $ cd $HOME/catkin_ws
 
 # retrieve the latest development version of HCR_5.
-$ git clone  src/HCR_5
+$ git clone https://github.com/pondinesh006/hanwha_robot_arm.git src/hanwha_robot
 
 # check build dependencies. Note: this may install additional packages,
 # depending on the software installed on the machine
